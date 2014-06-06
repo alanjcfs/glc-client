@@ -1,5 +1,5 @@
 settings = {}
-settings.nsq_http_api = "http://glcwalker.ohl:4151"
+settings.nsq_http_api = os.getenv("LOCAL_NSQ") or "http://glcwalker.ohl:4151"
 settings.nsq_host = "glcwalker.ohl"
 settings.nsq_port = 4150
 
