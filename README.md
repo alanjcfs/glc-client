@@ -22,19 +22,21 @@ I would recommend to create an alias in .bash_profile because the above
 command will open LOVE in the background, so all print() outputs will not be
 visible on the console window.
 
-Or, one way to make `love` in the OS X terminal:
+Or, second way to make `love` in the OS X terminal:
 
-	# depending on how you'd do it
-	$ mkdir -p $HOME/.bin
-	$ echo "export PATH=$PATH:$HOME/.bin" | tee ~/.bash_profile | tee ~/.zshrc
-	# and finally
+	# depending on how you'd put it on
+	mkdir -p $HOME/.bin
+	echo "export PATH=$PATH:$HOME/.bin" | tee ~/.bash_profile | tee ~/.zshrc
+
+	# soft linking, because I see you shiver with antici ...
 	$ ln -s /Applications/love.app/Contents/MacOS/love $HOME/.bin/love
 
+	# pation
 	$ love <directory>
 
 Linux:
 
-        love <directory>
+	love <directory>
 
 == Installing NSQ
 
